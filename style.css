@@ -1,0 +1,82 @@
+/* ===== Umumiy sahifa stillari ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #111;
+  font-family: Georgia, serif;
+}
+
+/* ===== Sarlavha (mutlaq joylashgan, konteyner ustida) ===== */
+h1 {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* ===== Canvas joylashadigan konteyner — butun ekran ===== */
+#glass-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #1a1a1a;
+  overflow: hidden;
+  cursor: crosshair;
+  user-select: none;
+}
+
+/* ===== Canvas o'zi ===== */
+#glass-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== Foydalanuvchiga ko'rsatma matni ===== */
+#hint {
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 15px;
+  pointer-events: none;
+}
+
+/* ===== Tozalash tugmasi ===== */
+#clear-btn {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  padding: 10px 28px;
+  border-radius: 24px;
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.2s;
+}
+
+#clear-btn:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
